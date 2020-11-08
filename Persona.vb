@@ -25,49 +25,42 @@
     Public Function getNom() As String
         Return Me.nom
     End Function
-
     Public Sub setCognom(ByVal cognom As String)
         Me.cognom = cognom
     End Sub
     Public Function getCognom() As String
         Return Me.cognom
     End Function
-
     Public Sub setEdat(ByVal edat As Int32)
         Me.edat = edat
     End Sub
     Public Function getEdat() As Int32
         Return Me.edat
     End Function
-
     Public Sub setTerritori(ByVal territori As String)
         Me.territori = territori
     End Sub
     Public Function getTerritori() As String
         Return Me.territori
     End Function
-
     Public Sub setCapacitat(ByVal capacitat As String)
         Me.capacitat = capacitat
     End Sub
     Public Function getCapacitat() As String
         Return Me.capacitat
     End Function
-
     Public Sub setEspai(ByVal espai As String)
         Me.espai = espai
     End Sub
     Public Function getEspai() As String
         Return Me.espai
     End Function
-
     Public Sub setEducacio(ByVal educacio As String)
         Me.educacio = educacio
     End Sub
     Public Function getEducacio() As String
         Return Me.educacio
     End Function
-
     Public Sub setGremi(ByVal gremi As String)
         Me.gremi = gremi
     End Sub
