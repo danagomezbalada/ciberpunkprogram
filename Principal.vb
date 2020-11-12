@@ -60,7 +60,6 @@
             Me.boto_capa.BackColor = Color.DimGray
         End If
     End Sub
-
     Private Sub Button1_MouseLeave(sender As System.Object, e As System.EventArgs) Handles boto_persones.MouseLeave, boto_gremis.MouseLeave, boto_territoris.MouseLeave, boto_capa.MouseLeave
         Me.boto_persones.BackColor = Color.Black
         Me.boto_territoris.BackColor = Color.Black

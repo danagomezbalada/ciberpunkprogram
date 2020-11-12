@@ -241,43 +241,55 @@ Partial Class Persones
         '
         'boto_afegir
         '
+        Me.boto_afegir.BackColor = System.Drawing.Color.Black
+        Me.boto_afegir.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.boto_afegir.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.boto_afegir.ForeColor = System.Drawing.SystemColors.Control
         Me.boto_afegir.Location = New System.Drawing.Point(80, 419)
         Me.boto_afegir.Name = "boto_afegir"
         Me.boto_afegir.Size = New System.Drawing.Size(117, 86)
         Me.boto_afegir.TabIndex = 29
         Me.boto_afegir.Text = "Afegir"
-        Me.boto_afegir.UseVisualStyleBackColor = True
+        Me.boto_afegir.UseVisualStyleBackColor = False
         '
         'boto_borrar
         '
+        Me.boto_borrar.BackColor = System.Drawing.Color.Black
+        Me.boto_borrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.boto_borrar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.boto_borrar.ForeColor = System.Drawing.SystemColors.Control
         Me.boto_borrar.Location = New System.Drawing.Point(214, 419)
         Me.boto_borrar.Name = "boto_borrar"
         Me.boto_borrar.Size = New System.Drawing.Size(117, 86)
         Me.boto_borrar.TabIndex = 30
         Me.boto_borrar.Text = "Borrar"
-        Me.boto_borrar.UseVisualStyleBackColor = True
+        Me.boto_borrar.UseVisualStyleBackColor = False
         '
         'boto_actualitzar
         '
+        Me.boto_actualitzar.BackColor = System.Drawing.Color.Black
+        Me.boto_actualitzar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.boto_actualitzar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.boto_actualitzar.ForeColor = System.Drawing.SystemColors.Control
         Me.boto_actualitzar.Location = New System.Drawing.Point(349, 419)
         Me.boto_actualitzar.Name = "boto_actualitzar"
         Me.boto_actualitzar.Size = New System.Drawing.Size(117, 86)
         Me.boto_actualitzar.TabIndex = 31
         Me.boto_actualitzar.Text = "Actualitzar"
-        Me.boto_actualitzar.UseVisualStyleBackColor = True
+        Me.boto_actualitzar.UseVisualStyleBackColor = False
         '
         'boto_cancelar
         '
+        Me.boto_cancelar.BackColor = System.Drawing.Color.Black
+        Me.boto_cancelar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.boto_cancelar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.boto_cancelar.ForeColor = System.Drawing.SystemColors.Control
         Me.boto_cancelar.Location = New System.Drawing.Point(483, 419)
         Me.boto_cancelar.Name = "boto_cancelar"
         Me.boto_cancelar.Size = New System.Drawing.Size(117, 86)
         Me.boto_cancelar.TabIndex = 32
         Me.boto_cancelar.Text = "Cancelar"
-        Me.boto_cancelar.UseVisualStyleBackColor = True
+        Me.boto_cancelar.UseVisualStyleBackColor = False
         '
         'logo_onu
         '

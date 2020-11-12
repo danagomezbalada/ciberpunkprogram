@@ -32,8 +32,11 @@ Partial Class Principal
         Me.logo_onu = New System.Windows.Forms.PictureBox()
         Me.label_benvingut = New System.Windows.Forms.Label()
         Me.fons_negre = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.logo_onu, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.fons_negre, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'boto_tancar
@@ -68,7 +71,7 @@ Partial Class Principal
         Me.boto_persones.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.boto_persones.Font = New System.Drawing.Font("Century Gothic", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.boto_persones.ForeColor = System.Drawing.SystemColors.Control
-        Me.boto_persones.Location = New System.Drawing.Point(608, 180)
+        Me.boto_persones.Location = New System.Drawing.Point(684, 180)
         Me.boto_persones.Name = "boto_persones"
         Me.boto_persones.Size = New System.Drawing.Size(285, 91)
         Me.boto_persones.TabIndex = 4
@@ -81,7 +84,7 @@ Partial Class Principal
         Me.boto_territoris.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.boto_territoris.Font = New System.Drawing.Font("Century Gothic", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.boto_territoris.ForeColor = System.Drawing.SystemColors.Control
-        Me.boto_territoris.Location = New System.Drawing.Point(608, 288)
+        Me.boto_territoris.Location = New System.Drawing.Point(684, 288)
         Me.boto_territoris.Name = "boto_territoris"
         Me.boto_territoris.Size = New System.Drawing.Size(285, 89)
         Me.boto_territoris.TabIndex = 5
@@ -94,7 +97,7 @@ Partial Class Principal
         Me.boto_gremis.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.boto_gremis.Font = New System.Drawing.Font("Century Gothic", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.boto_gremis.ForeColor = System.Drawing.SystemColors.Control
-        Me.boto_gremis.Location = New System.Drawing.Point(608, 504)
+        Me.boto_gremis.Location = New System.Drawing.Point(684, 504)
         Me.boto_gremis.Name = "boto_gremis"
         Me.boto_gremis.Size = New System.Drawing.Size(285, 86)
         Me.boto_gremis.TabIndex = 6
@@ -107,7 +110,7 @@ Partial Class Principal
         Me.boto_capa.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.boto_capa.Font = New System.Drawing.Font("Century Gothic", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.boto_capa.ForeColor = System.Drawing.SystemColors.Control
-        Me.boto_capa.Location = New System.Drawing.Point(608, 396)
+        Me.boto_capa.Location = New System.Drawing.Point(684, 396)
         Me.boto_capa.Name = "boto_capa"
         Me.boto_capa.Size = New System.Drawing.Size(285, 85)
         Me.boto_capa.TabIndex = 7
@@ -141,9 +144,32 @@ Partial Class Principal
         Me.fons_negre.BackColor = System.Drawing.Color.Black
         Me.fons_negre.Location = New System.Drawing.Point(-1, -12)
         Me.fons_negre.Name = "fons_negre"
-        Me.fons_negre.Size = New System.Drawing.Size(612, 649)
+        Me.fons_negre.Size = New System.Drawing.Size(688, 649)
         Me.fons_negre.TabIndex = 10
         Me.fons_negre.TabStop = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.Black
+        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PictureBox1.Location = New System.Drawing.Point(31, 341)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(533, 278)
+        Me.PictureBox1.TabIndex = 11
+        Me.PictureBox1.TabStop = False
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Black
+        Me.Label1.Font = New System.Drawing.Font("Agency FB", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.SystemColors.Control
+        Me.Label1.Location = New System.Drawing.Point(261, 229)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(340, 42)
+        Me.Label1.TabIndex = 12
+        Me.Label1.Text = "Quines dades voldria modificar?"
         '
         'Principal
         '
@@ -152,6 +178,8 @@ Partial Class Principal
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1113, 621)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.label_benvingut)
         Me.Controls.Add(Me.logo_onu)
         Me.Controls.Add(Me.boto_capa)
@@ -167,6 +195,7 @@ Partial Class Principal
         Me.Text = "Form1"
         CType(Me.logo_onu, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.fons_negre, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -181,4 +210,6 @@ Partial Class Principal
     Friend WithEvents logo_onu As PictureBox
     Friend WithEvents label_benvingut As Label
     Friend WithEvents fons_negre As PictureBox
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents Label1 As Label
 End Class
