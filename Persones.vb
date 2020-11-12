@@ -18,6 +18,7 @@
     Private Sub boto_minimitzar_Click(sender As Object, e As EventArgs) Handles boto_minimitzar.Click
         Me.WindowState = FormWindowState.Minimized
     End Sub
+
     Private Sub boto_tancar_Click(sender As Object, e As EventArgs) Handles boto_tancar.Click
         Principal.Show()
         Me.Close()
