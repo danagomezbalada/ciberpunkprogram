@@ -91,11 +91,11 @@ Partial Class Persones
         'tag_nom
         '
         Me.tag_nom.AutoSize = True
-        Me.tag_nom.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tag_nom.Font = New System.Drawing.Font("Agency FB", 17.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tag_nom.ForeColor = System.Drawing.SystemColors.Control
-        Me.tag_nom.Location = New System.Drawing.Point(65, 142)
+        Me.tag_nom.Location = New System.Drawing.Point(81, 141)
         Me.tag_nom.Name = "tag_nom"
-        Me.tag_nom.Size = New System.Drawing.Size(67, 29)
+        Me.tag_nom.Size = New System.Drawing.Size(52, 34)
         Me.tag_nom.TabIndex = 13
         Me.tag_nom.Text = "Nom"
         '
@@ -118,11 +118,11 @@ Partial Class Persones
         'tag_cognom
         '
         Me.tag_cognom.AutoSize = True
-        Me.tag_cognom.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tag_cognom.Font = New System.Drawing.Font("Agency FB", 17.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tag_cognom.ForeColor = System.Drawing.SystemColors.Control
-        Me.tag_cognom.Location = New System.Drawing.Point(23, 207)
+        Me.tag_cognom.Location = New System.Drawing.Point(49, 204)
         Me.tag_cognom.Name = "tag_cognom"
-        Me.tag_cognom.Size = New System.Drawing.Size(109, 29)
+        Me.tag_cognom.Size = New System.Drawing.Size(82, 34)
         Me.tag_cognom.TabIndex = 15
         Me.tag_cognom.Text = "Cognom"
         '
@@ -137,11 +137,11 @@ Partial Class Persones
         'tag_edat
         '
         Me.tag_edat.AutoSize = True
-        Me.tag_edat.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tag_edat.Font = New System.Drawing.Font("Agency FB", 17.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tag_edat.ForeColor = System.Drawing.SystemColors.Control
-        Me.tag_edat.Location = New System.Drawing.Point(65, 271)
+        Me.tag_edat.Location = New System.Drawing.Point(81, 270)
         Me.tag_edat.Name = "tag_edat"
-        Me.tag_edat.Size = New System.Drawing.Size(65, 29)
+        Me.tag_edat.Size = New System.Drawing.Size(50, 34)
         Me.tag_edat.TabIndex = 17
         Me.tag_edat.Text = "Edat"
         '
@@ -156,11 +156,11 @@ Partial Class Persones
         'tag_territori
         '
         Me.tag_territori.AutoSize = True
-        Me.tag_territori.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tag_territori.Font = New System.Drawing.Font("Agency FB", 17.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tag_territori.ForeColor = System.Drawing.SystemColors.Control
-        Me.tag_territori.Location = New System.Drawing.Point(33, 341)
+        Me.tag_territori.Location = New System.Drawing.Point(49, 340)
         Me.tag_territori.Name = "tag_territori"
-        Me.tag_territori.Size = New System.Drawing.Size(99, 29)
+        Me.tag_territori.Size = New System.Drawing.Size(87, 34)
         Me.tag_territori.TabIndex = 19
         Me.tag_territori.Text = "Territori"
         '
@@ -175,11 +175,11 @@ Partial Class Persones
         'tag_capacitat
         '
         Me.tag_capacitat.AutoSize = True
-        Me.tag_capacitat.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tag_capacitat.Font = New System.Drawing.Font("Agency FB", 17.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tag_capacitat.ForeColor = System.Drawing.SystemColors.Control
-        Me.tag_capacitat.Location = New System.Drawing.Point(346, 134)
+        Me.tag_capacitat.Location = New System.Drawing.Point(373, 133)
         Me.tag_capacitat.Name = "tag_capacitat"
-        Me.tag_capacitat.Size = New System.Drawing.Size(120, 29)
+        Me.tag_capacitat.Size = New System.Drawing.Size(92, 34)
         Me.tag_capacitat.TabIndex = 21
         Me.tag_capacitat.Text = "Capacitat"
         '
@@ -194,11 +194,11 @@ Partial Class Persones
         'tag_espai
         '
         Me.tag_espai.AutoSize = True
-        Me.tag_espai.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tag_espai.Font = New System.Drawing.Font("Agency FB", 17.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tag_espai.ForeColor = System.Drawing.SystemColors.Control
-        Me.tag_espai.Location = New System.Drawing.Point(385, 207)
+        Me.tag_espai.Location = New System.Drawing.Point(401, 206)
         Me.tag_espai.Name = "tag_espai"
-        Me.tag_espai.Size = New System.Drawing.Size(77, 29)
+        Me.tag_espai.Size = New System.Drawing.Size(58, 34)
         Me.tag_espai.TabIndex = 23
         Me.tag_espai.Text = "Espai"
         '
@@ -213,11 +213,11 @@ Partial Class Persones
         'tag_educacio
         '
         Me.tag_educacio.AutoSize = True
-        Me.tag_educacio.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tag_educacio.Font = New System.Drawing.Font("Agency FB", 17.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tag_educacio.ForeColor = System.Drawing.SystemColors.Control
-        Me.tag_educacio.Location = New System.Drawing.Point(348, 279)
+        Me.tag_educacio.Location = New System.Drawing.Point(377, 278)
         Me.tag_educacio.Name = "tag_educacio"
-        Me.tag_educacio.Size = New System.Drawing.Size(118, 29)
+        Me.tag_educacio.Size = New System.Drawing.Size(88, 34)
         Me.tag_educacio.TabIndex = 25
         Me.tag_educacio.Text = "Educacio"
         '
@@ -232,11 +232,11 @@ Partial Class Persones
         'tag_gremi
         '
         Me.tag_gremi.AutoSize = True
-        Me.tag_gremi.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tag_gremi.Font = New System.Drawing.Font("Agency FB", 17.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tag_gremi.ForeColor = System.Drawing.SystemColors.Control
-        Me.tag_gremi.Location = New System.Drawing.Point(380, 349)
+        Me.tag_gremi.Location = New System.Drawing.Point(396, 348)
         Me.tag_gremi.Name = "tag_gremi"
-        Me.tag_gremi.Size = New System.Drawing.Size(82, 29)
+        Me.tag_gremi.Size = New System.Drawing.Size(66, 34)
         Me.tag_gremi.TabIndex = 27
         Me.tag_gremi.Text = "Gremi"
         '
@@ -261,7 +261,7 @@ Partial Class Persones
         Me.boto_cancelar.Name = "boto_cancelar"
         Me.boto_cancelar.Size = New System.Drawing.Size(132, 86)
         Me.boto_cancelar.TabIndex = 85
-        Me.boto_cancelar.Text = "Cancelar"
+        Me.boto_cancelar.Text = "Cancel·lar"
         Me.boto_cancelar.UseVisualStyleBackColor = False
         '
         'boto_actualitzar
@@ -287,7 +287,7 @@ Partial Class Persones
         Me.boto_borrar.Name = "boto_borrar"
         Me.boto_borrar.Size = New System.Drawing.Size(132, 86)
         Me.boto_borrar.TabIndex = 83
-        Me.boto_borrar.Text = "Borrar"
+        Me.boto_borrar.Text = "Esborrar"
         Me.boto_borrar.UseVisualStyleBackColor = False
         '
         'boto_afegir

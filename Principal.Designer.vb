@@ -135,9 +135,9 @@ Partial Class Principal
         Me.label_benvingut.ForeColor = System.Drawing.Color.DodgerBlue
         Me.label_benvingut.Location = New System.Drawing.Point(206, 64)
         Me.label_benvingut.Name = "label_benvingut"
-        Me.label_benvingut.Size = New System.Drawing.Size(288, 74)
+        Me.label_benvingut.Size = New System.Drawing.Size(373, 74)
         Me.label_benvingut.TabIndex = 9
-        Me.label_benvingut.Text = "Benvingut"
+        Me.label_benvingut.Text = "Benvingut/da"
         '
         'fons_negre
         '
@@ -165,11 +165,11 @@ Partial Class Principal
         Me.Label1.BackColor = System.Drawing.Color.Black
         Me.Label1.Font = New System.Drawing.Font("Agency FB", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.Control
-        Me.Label1.Location = New System.Drawing.Point(261, 229)
+        Me.Label1.Location = New System.Drawing.Point(102, 229)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(340, 42)
+        Me.Label1.Size = New System.Drawing.Size(462, 42)
         Me.Label1.TabIndex = 12
-        Me.Label1.Text = "Quines dades voldria modificar?"
+        Me.Label1.Text = "Quines dades voldria modificar o consultar?"
         '
         'Principal
         '

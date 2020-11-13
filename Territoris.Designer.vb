@@ -78,11 +78,11 @@ Partial Class Territoris
         'tag_territori
         '
         Me.tag_territori.AutoSize = True
-        Me.tag_territori.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tag_territori.Font = New System.Drawing.Font("Agency FB", 16.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tag_territori.ForeColor = System.Drawing.SystemColors.Control
-        Me.tag_territori.Location = New System.Drawing.Point(142, 291)
+        Me.tag_territori.Location = New System.Drawing.Point(154, 288)
         Me.tag_territori.Name = "tag_territori"
-        Me.tag_territori.Size = New System.Drawing.Size(99, 29)
+        Me.tag_territori.Size = New System.Drawing.Size(83, 33)
         Me.tag_territori.TabIndex = 82
         Me.tag_territori.Text = "Territori"
         '
@@ -96,7 +96,7 @@ Partial Class Territoris
         Me.boto_cancelar.Name = "boto_cancelar"
         Me.boto_cancelar.Size = New System.Drawing.Size(132, 86)
         Me.boto_cancelar.TabIndex = 81
-        Me.boto_cancelar.Text = "Cancelar"
+        Me.boto_cancelar.Text = "Cancel·lar"
         Me.boto_cancelar.UseVisualStyleBackColor = False
         '
         'boto_actualitzar
@@ -122,7 +122,7 @@ Partial Class Territoris
         Me.boto_borrar.Name = "boto_borrar"
         Me.boto_borrar.Size = New System.Drawing.Size(132, 86)
         Me.boto_borrar.TabIndex = 79
-        Me.boto_borrar.Text = "Borrar"
+        Me.boto_borrar.Text = "Esborrar"
         Me.boto_borrar.UseVisualStyleBackColor = False
         '
         'boto_afegir
@@ -161,11 +161,11 @@ Partial Class Territoris
         'tag_gremi
         '
         Me.tag_gremi.AutoSize = True
-        Me.tag_gremi.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tag_gremi.Font = New System.Drawing.Font("Agency FB", 16.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tag_gremi.ForeColor = System.Drawing.SystemColors.Control
-        Me.tag_gremi.Location = New System.Drawing.Point(158, 191)
+        Me.tag_gremi.Location = New System.Drawing.Point(175, 188)
         Me.tag_gremi.Name = "tag_gremi"
-        Me.tag_gremi.Size = New System.Drawing.Size(82, 29)
+        Me.tag_gremi.Size = New System.Drawing.Size(65, 33)
         Me.tag_gremi.TabIndex = 75
         Me.tag_gremi.Text = "Gremi"
         '
