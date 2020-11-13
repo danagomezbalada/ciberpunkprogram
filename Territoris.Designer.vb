@@ -35,6 +35,7 @@ Partial Class Territoris
         Me.text_gremi = New System.Windows.Forms.TextBox()
         Me.tag_gremi = New System.Windows.Forms.Label()
         Me.taula_dades = New System.Windows.Forms.DataGridView()
+        Me.label_seccio = New System.Windows.Forms.Label()
         CType(Me.logo_onu, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.taula_dades, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -178,12 +179,24 @@ Partial Class Territoris
         Me.taula_dades.Size = New System.Drawing.Size(394, 414)
         Me.taula_dades.TabIndex = 72
         '
+        'label_seccio
+        '
+        Me.label_seccio.AutoSize = True
+        Me.label_seccio.Font = New System.Drawing.Font("Sitka Small", 28.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.label_seccio.ForeColor = System.Drawing.Color.DodgerBlue
+        Me.label_seccio.Location = New System.Drawing.Point(135, 11)
+        Me.label_seccio.Name = "label_seccio"
+        Me.label_seccio.Size = New System.Drawing.Size(260, 69)
+        Me.label_seccio.TabIndex = 87
+        Me.label_seccio.Text = "Territoris"
+        '
         'Territoris
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1113, 621)
+        Me.Controls.Add(Me.label_seccio)
         Me.Controls.Add(Me.text_territori)
         Me.Controls.Add(Me.tag_territori)
         Me.Controls.Add(Me.boto_cancelar)
@@ -218,4 +231,5 @@ Partial Class Territoris
     Friend WithEvents text_gremi As TextBox
     Friend WithEvents tag_gremi As Label
     Friend WithEvents taula_dades As DataGridView
+    Friend WithEvents label_seccio As Label
 End Class

@@ -37,6 +37,7 @@ Partial Class Gremis
         Me.boto_actualitzar = New System.Windows.Forms.Button()
         Me.boto_borrar = New System.Windows.Forms.Button()
         Me.boto_afegir = New System.Windows.Forms.Button()
+        Me.label_seccio = New System.Windows.Forms.Label()
         CType(Me.logo_onu, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.taula_dades, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -200,12 +201,24 @@ Partial Class Gremis
         Me.boto_afegir.Text = "Afegir"
         Me.boto_afegir.UseVisualStyleBackColor = False
         '
+        'label_seccio
+        '
+        Me.label_seccio.AutoSize = True
+        Me.label_seccio.Font = New System.Drawing.Font("Sitka Small", 28.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.label_seccio.ForeColor = System.Drawing.Color.DodgerBlue
+        Me.label_seccio.Location = New System.Drawing.Point(139, 18)
+        Me.label_seccio.Name = "label_seccio"
+        Me.label_seccio.Size = New System.Drawing.Size(200, 69)
+        Me.label_seccio.TabIndex = 87
+        Me.label_seccio.Text = "Gremis"
+        '
         'Gremis
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1113, 621)
+        Me.Controls.Add(Me.label_seccio)
         Me.Controls.Add(Me.boto_cancelar)
         Me.Controls.Add(Me.boto_actualitzar)
         Me.Controls.Add(Me.boto_borrar)
@@ -244,4 +257,5 @@ Partial Class Gremis
     Friend WithEvents boto_actualitzar As Button
     Friend WithEvents boto_borrar As Button
     Friend WithEvents boto_afegir As Button
+    Friend WithEvents label_seccio As Label
 End Class

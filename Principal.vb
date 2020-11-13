@@ -3,15 +3,15 @@
     Dim ex, ey As Integer
     Dim arrossega As Boolean
 
-    Private Sub Form1_MouseDown(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles MyBase.MouseDown
+    Private Sub Form1_MouseDown(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles MyBase.MouseDown, fons_negre.MouseDown
         ex = e.X
         ey = e.Y
         arrossega = True
     End Sub
-    Private Sub Form1_MouseUp(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles MyBase.MouseUp
+    Private Sub Form1_MouseUp(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles MyBase.MouseUp, fons_negre.MouseUp
         arrossega = False
     End Sub
-    Private Sub Form1_MouseMove(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles MyBase.MouseMove
+    Private Sub Form1_MouseMove(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles MyBase.MouseMove, fons_negre.MouseMove
         If arrossega Then
             Me.Location = Me.PointToScreen(New Point(MousePosition.X - Me.Location.X - ex, MousePosition.Y - Me.Location.Y - ey))
         End If
@@ -31,22 +31,18 @@
     Private Sub boto_persones_Click(sender As Object, e As EventArgs) Handles boto_persones.Click
         Persones.Show()
         Me.Hide()
-        'Me.Close()
     End Sub
     Private Sub boto_territoris_Click(sender As Object, e As EventArgs) Handles boto_territoris.Click
         Territoris.Show()
         Me.Hide()
-        'Me.Close() 
     End Sub
     Private Sub boto_gremis_Click(sender As Object, e As EventArgs) Handles boto_gremis.Click
         Gremis.Show()
         Me.Hide()
-        'Me.Close()
     End Sub
     Private Sub boto_capa_Click(sender As Object, e As EventArgs) Handles boto_capa.Click
         Capacitats.Show()
         Me.Hide()
-        'Me.Close()
     End Sub
 
     Private Sub Button1_MouseEnter(sender As System.Object, e As System.EventArgs) Handles boto_persones.MouseEnter, boto_gremis.MouseEnter, boto_territoris.MouseEnter, boto_capa.MouseEnter
