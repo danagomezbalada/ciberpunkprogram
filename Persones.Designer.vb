@@ -48,6 +48,7 @@ Partial Class Persones
         Me.boto_borrar = New System.Windows.Forms.Button()
         Me.boto_afegir = New System.Windows.Forms.Button()
         Me.label_seccio = New System.Windows.Forms.Label()
+        Me.label_connexio = New System.Windows.Forms.Label()
         CType(Me.taula_dades, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.logo_onu, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -314,12 +315,23 @@ Partial Class Persones
         Me.label_seccio.TabIndex = 87
         Me.label_seccio.Text = "Persones"
         '
+        'label_connexio
+        '
+        Me.label_connexio.AutoSize = True
+        Me.label_connexio.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.label_connexio.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.label_connexio.Location = New System.Drawing.Point(20, 552)
+        Me.label_connexio.Name = "label_connexio"
+        Me.label_connexio.Size = New System.Drawing.Size(0, 29)
+        Me.label_connexio.TabIndex = 88
+        '
         'Persones
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1113, 621)
+        Me.Controls.Add(Me.label_connexio)
         Me.Controls.Add(Me.label_seccio)
         Me.Controls.Add(Me.boto_cancelar)
         Me.Controls.Add(Me.boto_actualitzar)
@@ -380,4 +392,5 @@ Partial Class Persones
     Friend WithEvents boto_borrar As Button
     Friend WithEvents boto_afegir As Button
     Friend WithEvents label_seccio As Label
+    Friend WithEvents label_connexio As Label
 End Class

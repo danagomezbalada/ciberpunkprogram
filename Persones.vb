@@ -35,14 +35,14 @@ Public Class Persones
             connexio = New MySqlConnection()
             connexio.ConnectionString = "server=localhost;user id=root;password=;database=persones"
             connexio.Open()
-            MessageBox.Show("Connectat")
+            label_connexio.Text = "Connectat"
             correcte = True
         Catch
-            MessageBox.Show("Error")
+            label_connexio.Text = "Error"
             correcte = False
         End Try
         If correcte = True Then
-            taula_dades.BackgroundColor = Color.White
+            taula_dades.DataSource = obtindreDades()
         Else
             taula_dades.BackgroundColor = Color.Black
         End If
@@ -65,4 +65,12 @@ Public Class Persones
         Me.boto_borrar.BackColor = Color.Black
         Me.boto_cancelar.BackColor = Color.Black
     End Sub
+
+    Private Function obtindreDades() As DataTable
+        '
+        ' This Function needs to build the data table.
+        '
+        Return New DataTable()
+    End Function
+
 End Class

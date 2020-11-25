@@ -34,10 +34,10 @@ Public Class Territoris
             connexio = New MySqlConnection()
             connexio.ConnectionString = "server=localhost;user id=root;password=;database=persones"
             connexio.Open()
-            MessageBox.Show("Connectat")
+            Label1.Text = "Connectat"
             correcte = True
         Catch
-            MessageBox.Show("Error")
+            Label1.Text = "Error"
             correcte = False
         End Try
         If correcte = True Then
@@ -58,6 +58,7 @@ Public Class Territoris
             Me.boto_cancelar.BackColor = Color.DimGray
         End If
     End Sub
+
     Private Sub Button1_MouseLeave(sender As System.Object, e As System.EventArgs) Handles boto_afegir.MouseLeave, boto_actualitzar.MouseLeave, boto_borrar.MouseLeave, boto_cancelar.MouseLeave
         Me.boto_afegir.BackColor = Color.Black
         Me.boto_actualitzar.BackColor = Color.Black

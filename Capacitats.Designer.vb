@@ -36,6 +36,7 @@ Partial Class Capacitats
         Me.boto_borrar = New System.Windows.Forms.Button()
         Me.boto_afegir = New System.Windows.Forms.Button()
         Me.label_seccio = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.logo_onu, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.taula_dades, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -190,12 +191,23 @@ Partial Class Capacitats
         Me.label_seccio.TabIndex = 86
         Me.label_seccio.Text = "Capacitats"
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label1.Location = New System.Drawing.Point(55, 559)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(0, 29)
+        Me.Label1.TabIndex = 89
+        '
         'Capacitats
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1113, 621)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.label_seccio)
         Me.Controls.Add(Me.boto_cancelar)
         Me.Controls.Add(Me.boto_actualitzar)
@@ -232,4 +244,5 @@ Partial Class Capacitats
     Friend WithEvents boto_borrar As Button
     Friend WithEvents boto_afegir As Button
     Friend WithEvents label_seccio As Label
+    Friend WithEvents Label1 As Label
 End Class

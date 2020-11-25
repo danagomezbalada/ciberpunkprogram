@@ -34,10 +34,10 @@ Public Class Gremis
             connexio = New MySqlConnection()
             connexio.ConnectionString = "server=localhost;user id=root;password=;database=persones"
             connexio.Open()
-            MessageBox.Show("Connectat")
+            Label1.Text = "Connectat"
             correcte = True
         Catch
-            MessageBox.Show("Error")
+            Label1.Text = "Error"
             correcte = False
         End Try
         If correcte = True Then
