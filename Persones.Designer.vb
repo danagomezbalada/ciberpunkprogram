@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Persones
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Persones
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Persones))
         Me.boto_minimitzar = New System.Windows.Forms.Button()
@@ -43,12 +43,13 @@ Partial Class Persones
         Me.text_gremi = New System.Windows.Forms.TextBox()
         Me.tag_gremi = New System.Windows.Forms.Label()
         Me.logo_onu = New System.Windows.Forms.PictureBox()
-        Me.boto_cancelar = New System.Windows.Forms.Button()
-        Me.boto_actualitzar = New System.Windows.Forms.Button()
+        Me.boto_seguent = New System.Windows.Forms.Button()
+        Me.boto_anterior = New System.Windows.Forms.Button()
         Me.boto_borrar = New System.Windows.Forms.Button()
         Me.boto_afegir = New System.Windows.Forms.Button()
         Me.label_seccio = New System.Windows.Forms.Label()
         Me.label_connexio = New System.Windows.Forms.Label()
+        Me.boto_actualitzar = New System.Windows.Forms.Button()
         CType(Me.taula_dades, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.logo_onu, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -102,18 +103,18 @@ Partial Class Persones
         '
         'text_nom
         '
-        Me.text_nom.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.text_nom.Location = New System.Drawing.Point(138, 139)
+        Me.text_nom.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.text_nom.Location = New System.Drawing.Point(132, 143)
         Me.text_nom.Name = "text_nom"
-        Me.text_nom.Size = New System.Drawing.Size(192, 36)
+        Me.text_nom.Size = New System.Drawing.Size(192, 30)
         Me.text_nom.TabIndex = 14
         '
         'text_cognom
         '
-        Me.text_cognom.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.text_cognom.Location = New System.Drawing.Point(138, 204)
+        Me.text_cognom.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.text_cognom.Location = New System.Drawing.Point(132, 208)
         Me.text_cognom.Name = "text_cognom"
-        Me.text_cognom.Size = New System.Drawing.Size(192, 36)
+        Me.text_cognom.Size = New System.Drawing.Size(192, 30)
         Me.text_cognom.TabIndex = 16
         '
         'tag_cognom
@@ -129,10 +130,10 @@ Partial Class Persones
         '
         'text_edat
         '
-        Me.text_edat.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.text_edat.Location = New System.Drawing.Point(138, 268)
+        Me.text_edat.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.text_edat.Location = New System.Drawing.Point(132, 272)
         Me.text_edat.Name = "text_edat"
-        Me.text_edat.Size = New System.Drawing.Size(192, 36)
+        Me.text_edat.Size = New System.Drawing.Size(192, 30)
         Me.text_edat.TabIndex = 18
         '
         'tag_edat
@@ -148,10 +149,10 @@ Partial Class Persones
         '
         'text_territori
         '
-        Me.text_territori.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.text_territori.Location = New System.Drawing.Point(138, 338)
+        Me.text_territori.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.text_territori.Location = New System.Drawing.Point(132, 342)
         Me.text_territori.Name = "text_territori"
-        Me.text_territori.Size = New System.Drawing.Size(192, 36)
+        Me.text_territori.Size = New System.Drawing.Size(192, 30)
         Me.text_territori.TabIndex = 20
         '
         'tag_territori
@@ -159,7 +160,7 @@ Partial Class Persones
         Me.tag_territori.AutoSize = True
         Me.tag_territori.Font = New System.Drawing.Font("Agency FB", 17.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tag_territori.ForeColor = System.Drawing.SystemColors.Control
-        Me.tag_territori.Location = New System.Drawing.Point(49, 340)
+        Me.tag_territori.Location = New System.Drawing.Point(45, 338)
         Me.tag_territori.Name = "tag_territori"
         Me.tag_territori.Size = New System.Drawing.Size(87, 34)
         Me.tag_territori.TabIndex = 19
@@ -167,10 +168,10 @@ Partial Class Persones
         '
         'text_capacitat
         '
-        Me.text_capacitat.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.text_capacitat.Location = New System.Drawing.Point(471, 131)
+        Me.text_capacitat.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.text_capacitat.Location = New System.Drawing.Point(465, 135)
         Me.text_capacitat.Name = "text_capacitat"
-        Me.text_capacitat.Size = New System.Drawing.Size(192, 36)
+        Me.text_capacitat.Size = New System.Drawing.Size(192, 30)
         Me.text_capacitat.TabIndex = 22
         '
         'tag_capacitat
@@ -186,10 +187,10 @@ Partial Class Persones
         '
         'text_espai
         '
-        Me.text_espai.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.text_espai.Location = New System.Drawing.Point(471, 204)
+        Me.text_espai.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.text_espai.Location = New System.Drawing.Point(465, 208)
         Me.text_espai.Name = "text_espai"
-        Me.text_espai.Size = New System.Drawing.Size(192, 36)
+        Me.text_espai.Size = New System.Drawing.Size(192, 30)
         Me.text_espai.TabIndex = 24
         '
         'tag_espai
@@ -205,10 +206,10 @@ Partial Class Persones
         '
         'text_educacio
         '
-        Me.text_educacio.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.text_educacio.Location = New System.Drawing.Point(471, 276)
+        Me.text_educacio.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.text_educacio.Location = New System.Drawing.Point(465, 280)
         Me.text_educacio.Name = "text_educacio"
-        Me.text_educacio.Size = New System.Drawing.Size(192, 36)
+        Me.text_educacio.Size = New System.Drawing.Size(192, 30)
         Me.text_educacio.TabIndex = 26
         '
         'tag_educacio
@@ -224,10 +225,10 @@ Partial Class Persones
         '
         'text_gremi
         '
-        Me.text_gremi.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.text_gremi.Location = New System.Drawing.Point(471, 346)
+        Me.text_gremi.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.text_gremi.Location = New System.Drawing.Point(465, 350)
         Me.text_gremi.Name = "text_gremi"
-        Me.text_gremi.Size = New System.Drawing.Size(192, 36)
+        Me.text_gremi.Size = New System.Drawing.Size(192, 30)
         Me.text_gremi.TabIndex = 28
         '
         'tag_gremi
@@ -252,31 +253,31 @@ Partial Class Persones
         Me.logo_onu.TabIndex = 33
         Me.logo_onu.TabStop = False
         '
-        'boto_cancelar
+        'boto_seguent
         '
-        Me.boto_cancelar.BackColor = System.Drawing.Color.Black
-        Me.boto_cancelar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.boto_cancelar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.boto_cancelar.ForeColor = System.Drawing.SystemColors.Control
-        Me.boto_cancelar.Location = New System.Drawing.Point(505, 414)
-        Me.boto_cancelar.Name = "boto_cancelar"
-        Me.boto_cancelar.Size = New System.Drawing.Size(132, 86)
-        Me.boto_cancelar.TabIndex = 85
-        Me.boto_cancelar.Text = "Cancel·lar"
-        Me.boto_cancelar.UseVisualStyleBackColor = False
+        Me.boto_seguent.BackColor = System.Drawing.Color.Black
+        Me.boto_seguent.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.boto_seguent.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.boto_seguent.ForeColor = System.Drawing.SystemColors.Control
+        Me.boto_seguent.Location = New System.Drawing.Point(589, 414)
+        Me.boto_seguent.Name = "boto_seguent"
+        Me.boto_seguent.Size = New System.Drawing.Size(68, 86)
+        Me.boto_seguent.TabIndex = 85
+        Me.boto_seguent.Text = ">"
+        Me.boto_seguent.UseVisualStyleBackColor = False
         '
-        'boto_actualitzar
+        'boto_anterior
         '
-        Me.boto_actualitzar.BackColor = System.Drawing.Color.Black
-        Me.boto_actualitzar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.boto_actualitzar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.boto_actualitzar.ForeColor = System.Drawing.SystemColors.Control
-        Me.boto_actualitzar.Location = New System.Drawing.Point(356, 414)
-        Me.boto_actualitzar.Name = "boto_actualitzar"
-        Me.boto_actualitzar.Size = New System.Drawing.Size(132, 86)
-        Me.boto_actualitzar.TabIndex = 84
-        Me.boto_actualitzar.Text = "Actualitzar"
-        Me.boto_actualitzar.UseVisualStyleBackColor = False
+        Me.boto_anterior.BackColor = System.Drawing.Color.Black
+        Me.boto_anterior.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.boto_anterior.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.boto_anterior.ForeColor = System.Drawing.SystemColors.Control
+        Me.boto_anterior.Location = New System.Drawing.Point(37, 414)
+        Me.boto_anterior.Name = "boto_anterior"
+        Me.boto_anterior.Size = New System.Drawing.Size(76, 86)
+        Me.boto_anterior.TabIndex = 84
+        Me.boto_anterior.Text = "<"
+        Me.boto_anterior.UseVisualStyleBackColor = False
         '
         'boto_borrar
         '
@@ -284,7 +285,7 @@ Partial Class Persones
         Me.boto_borrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.boto_borrar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.boto_borrar.ForeColor = System.Drawing.SystemColors.Control
-        Me.boto_borrar.Location = New System.Drawing.Point(209, 414)
+        Me.boto_borrar.Location = New System.Drawing.Point(438, 414)
         Me.boto_borrar.Name = "boto_borrar"
         Me.boto_borrar.Size = New System.Drawing.Size(132, 86)
         Me.boto_borrar.TabIndex = 83
@@ -297,7 +298,7 @@ Partial Class Persones
         Me.boto_afegir.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.boto_afegir.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.boto_afegir.ForeColor = System.Drawing.SystemColors.Control
-        Me.boto_afegir.Location = New System.Drawing.Point(58, 414)
+        Me.boto_afegir.Location = New System.Drawing.Point(132, 414)
         Me.boto_afegir.Name = "boto_afegir"
         Me.boto_afegir.Size = New System.Drawing.Size(132, 86)
         Me.boto_afegir.TabIndex = 82
@@ -325,16 +326,30 @@ Partial Class Persones
         Me.label_connexio.Size = New System.Drawing.Size(0, 29)
         Me.label_connexio.TabIndex = 88
         '
+        'boto_actualitzar
+        '
+        Me.boto_actualitzar.BackColor = System.Drawing.Color.Black
+        Me.boto_actualitzar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.boto_actualitzar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.boto_actualitzar.ForeColor = System.Drawing.SystemColors.Control
+        Me.boto_actualitzar.Location = New System.Drawing.Point(285, 414)
+        Me.boto_actualitzar.Name = "boto_actualitzar"
+        Me.boto_actualitzar.Size = New System.Drawing.Size(132, 86)
+        Me.boto_actualitzar.TabIndex = 89
+        Me.boto_actualitzar.Text = "Actualitzar"
+        Me.boto_actualitzar.UseVisualStyleBackColor = False
+        '
         'Persones
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1113, 621)
+        Me.Controls.Add(Me.boto_actualitzar)
         Me.Controls.Add(Me.label_connexio)
         Me.Controls.Add(Me.label_seccio)
-        Me.Controls.Add(Me.boto_cancelar)
-        Me.Controls.Add(Me.boto_actualitzar)
+        Me.Controls.Add(Me.boto_seguent)
+        Me.Controls.Add(Me.boto_anterior)
         Me.Controls.Add(Me.boto_borrar)
         Me.Controls.Add(Me.boto_afegir)
         Me.Controls.Add(Me.logo_onu)
@@ -387,10 +402,11 @@ Partial Class Persones
     Friend WithEvents text_gremi As TextBox
     Friend WithEvents tag_gremi As Label
     Friend WithEvents logo_onu As PictureBox
-    Friend WithEvents boto_cancelar As Button
-    Friend WithEvents boto_actualitzar As Button
+    Friend WithEvents boto_seguent As Button
+    Friend WithEvents boto_anterior As Button
     Friend WithEvents boto_borrar As Button
     Friend WithEvents boto_afegir As Button
     Friend WithEvents label_seccio As Label
     Friend WithEvents label_connexio As Label
+    Friend WithEvents boto_actualitzar As Button
 End Class
