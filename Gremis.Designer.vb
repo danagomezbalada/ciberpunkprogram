@@ -83,7 +83,7 @@ Partial Class Gremis
         '
         'text_gremi
         '
-        Me.text_gremi.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.text_gremi.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.text_gremi.Location = New System.Drawing.Point(251, 126)
         Me.text_gremi.Multiline = True
         Me.text_gremi.Name = "text_gremi"
@@ -103,7 +103,7 @@ Partial Class Gremis
         '
         'text_capacitat
         '
-        Me.text_capacitat.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.text_capacitat.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.text_capacitat.Location = New System.Drawing.Point(251, 218)
         Me.text_capacitat.Multiline = True
         Me.text_capacitat.Name = "text_capacitat"
@@ -133,7 +133,7 @@ Partial Class Gremis
         '
         'text_territori
         '
-        Me.text_territori.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.text_territori.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.text_territori.Location = New System.Drawing.Point(251, 322)
         Me.text_territori.Multiline = True
         Me.text_territori.Name = "text_territori"
