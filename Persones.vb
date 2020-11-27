@@ -52,21 +52,10 @@ Public Class Persones
     End Sub
 
     Private Sub botons_MouseEnter(sender As System.Object, e As System.EventArgs) Handles boto_afegir.MouseEnter, boto_anterior.MouseEnter, boto_borrar.MouseEnter, boto_seguent.MouseEnter
-        If sender Is boto_afegir Then
-            Me.boto_afegir.BackColor = Color.DimGray
-        ElseIf sender Is boto_anterior Then
-            Me.boto_anterior.BackColor = Color.DimGray
-        ElseIf sender Is boto_borrar Then
-            Me.boto_borrar.BackColor = Color.DimGray
-        Else
-            Me.boto_seguent.BackColor = Color.DimGray
-        End If
+        sender.BackColor = Color.DimGray
     End Sub
     Private Sub botons_MouseLeave(sender As System.Object, e As System.EventArgs) Handles boto_afegir.MouseLeave, boto_anterior.MouseLeave, boto_borrar.MouseLeave, boto_seguent.MouseLeave
-        Me.boto_afegir.BackColor = Color.Black
-        Me.boto_anterior.BackColor = Color.Black
-        Me.boto_borrar.BackColor = Color.Black
-        Me.boto_seguent.BackColor = Color.Black
+        sender.BackColor = Color.Black
     End Sub
     Private Sub boto_afegir_Click(sender As Object, e As EventArgs) Handles boto_afegir.Click
         afegirPersona()

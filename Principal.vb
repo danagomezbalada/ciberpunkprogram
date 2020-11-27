@@ -46,21 +46,10 @@
     End Sub
 
     Private Sub Button1_MouseEnter(sender As System.Object, e As System.EventArgs) Handles boto_persones.MouseEnter, boto_gremis.MouseEnter, boto_territoris.MouseEnter, boto_capa.MouseEnter
-        If sender Is boto_persones Then
-            Me.boto_persones.BackColor = Color.DimGray
-        ElseIf sender Is boto_gremis Then
-            Me.boto_gremis.BackColor = Color.DimGray
-        ElseIf sender Is boto_territoris Then
-            Me.boto_territoris.BackColor = Color.DimGray
-        Else
-            Me.boto_capa.BackColor = Color.DimGray
-        End If
+        sender.BackColor = Color.DimGray
     End Sub
     Private Sub Button1_MouseLeave(sender As System.Object, e As System.EventArgs) Handles boto_persones.MouseLeave, boto_gremis.MouseLeave, boto_territoris.MouseLeave, boto_capa.MouseLeave
-        Me.boto_persones.BackColor = Color.Black
-        Me.boto_territoris.BackColor = Color.Black
-        Me.boto_gremis.BackColor = Color.Black
-        Me.boto_capa.BackColor = Color.Black
+        sender.BackColor = Color.Black
     End Sub
 
 

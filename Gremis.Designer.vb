@@ -33,12 +33,13 @@ Partial Class Gremis
         Me.taula_dades = New System.Windows.Forms.DataGridView()
         Me.text_territori = New System.Windows.Forms.TextBox()
         Me.tag_territori = New System.Windows.Forms.Label()
-        Me.boto_cancelar = New System.Windows.Forms.Button()
-        Me.boto_actualitzar = New System.Windows.Forms.Button()
-        Me.boto_borrar = New System.Windows.Forms.Button()
-        Me.boto_afegir = New System.Windows.Forms.Button()
         Me.label_seccio = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.boto_actualitzar = New System.Windows.Forms.Button()
+        Me.boto_seguent = New System.Windows.Forms.Button()
+        Me.boto_anterior = New System.Windows.Forms.Button()
+        Me.boto_borrar = New System.Windows.Forms.Button()
+        Me.boto_afegir = New System.Windows.Forms.Button()
         CType(Me.logo_onu, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.taula_dades, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -150,58 +151,6 @@ Partial Class Gremis
         Me.tag_territori.TabIndex = 70
         Me.tag_territori.Text = "Territori"
         '
-        'boto_cancelar
-        '
-        Me.boto_cancelar.BackColor = System.Drawing.Color.Black
-        Me.boto_cancelar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.boto_cancelar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.boto_cancelar.ForeColor = System.Drawing.SystemColors.Control
-        Me.boto_cancelar.Location = New System.Drawing.Point(509, 410)
-        Me.boto_cancelar.Name = "boto_cancelar"
-        Me.boto_cancelar.Size = New System.Drawing.Size(132, 86)
-        Me.boto_cancelar.TabIndex = 85
-        Me.boto_cancelar.Text = "Cancel·lar"
-        Me.boto_cancelar.UseVisualStyleBackColor = False
-        '
-        'boto_actualitzar
-        '
-        Me.boto_actualitzar.BackColor = System.Drawing.Color.Black
-        Me.boto_actualitzar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.boto_actualitzar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.boto_actualitzar.ForeColor = System.Drawing.SystemColors.Control
-        Me.boto_actualitzar.Location = New System.Drawing.Point(360, 410)
-        Me.boto_actualitzar.Name = "boto_actualitzar"
-        Me.boto_actualitzar.Size = New System.Drawing.Size(132, 86)
-        Me.boto_actualitzar.TabIndex = 84
-        Me.boto_actualitzar.Text = "Actualitzar"
-        Me.boto_actualitzar.UseVisualStyleBackColor = False
-        '
-        'boto_borrar
-        '
-        Me.boto_borrar.BackColor = System.Drawing.Color.Black
-        Me.boto_borrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.boto_borrar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.boto_borrar.ForeColor = System.Drawing.SystemColors.Control
-        Me.boto_borrar.Location = New System.Drawing.Point(213, 410)
-        Me.boto_borrar.Name = "boto_borrar"
-        Me.boto_borrar.Size = New System.Drawing.Size(132, 86)
-        Me.boto_borrar.TabIndex = 83
-        Me.boto_borrar.Text = "Esborrar"
-        Me.boto_borrar.UseVisualStyleBackColor = False
-        '
-        'boto_afegir
-        '
-        Me.boto_afegir.BackColor = System.Drawing.Color.Black
-        Me.boto_afegir.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.boto_afegir.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.boto_afegir.ForeColor = System.Drawing.SystemColors.Control
-        Me.boto_afegir.Location = New System.Drawing.Point(62, 410)
-        Me.boto_afegir.Name = "boto_afegir"
-        Me.boto_afegir.Size = New System.Drawing.Size(132, 86)
-        Me.boto_afegir.TabIndex = 82
-        Me.boto_afegir.Text = "Afegir"
-        Me.boto_afegir.UseVisualStyleBackColor = False
-        '
         'label_seccio
         '
         Me.label_seccio.AutoSize = True
@@ -223,18 +172,84 @@ Partial Class Gremis
         Me.Label1.Size = New System.Drawing.Size(0, 29)
         Me.Label1.TabIndex = 89
         '
+        'boto_actualitzar
+        '
+        Me.boto_actualitzar.BackColor = System.Drawing.Color.Black
+        Me.boto_actualitzar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.boto_actualitzar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.boto_actualitzar.ForeColor = System.Drawing.SystemColors.Control
+        Me.boto_actualitzar.Location = New System.Drawing.Point(273, 404)
+        Me.boto_actualitzar.Name = "boto_actualitzar"
+        Me.boto_actualitzar.Size = New System.Drawing.Size(132, 86)
+        Me.boto_actualitzar.TabIndex = 94
+        Me.boto_actualitzar.Text = "Actualitzar"
+        Me.boto_actualitzar.UseVisualStyleBackColor = False
+        '
+        'boto_seguent
+        '
+        Me.boto_seguent.BackColor = System.Drawing.Color.Black
+        Me.boto_seguent.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.boto_seguent.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.boto_seguent.ForeColor = System.Drawing.SystemColors.Control
+        Me.boto_seguent.Location = New System.Drawing.Point(577, 404)
+        Me.boto_seguent.Name = "boto_seguent"
+        Me.boto_seguent.Size = New System.Drawing.Size(68, 86)
+        Me.boto_seguent.TabIndex = 93
+        Me.boto_seguent.Text = ">"
+        Me.boto_seguent.UseVisualStyleBackColor = False
+        '
+        'boto_anterior
+        '
+        Me.boto_anterior.BackColor = System.Drawing.Color.Black
+        Me.boto_anterior.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.boto_anterior.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.boto_anterior.ForeColor = System.Drawing.SystemColors.Control
+        Me.boto_anterior.Location = New System.Drawing.Point(25, 404)
+        Me.boto_anterior.Name = "boto_anterior"
+        Me.boto_anterior.Size = New System.Drawing.Size(76, 86)
+        Me.boto_anterior.TabIndex = 92
+        Me.boto_anterior.Text = "<"
+        Me.boto_anterior.UseVisualStyleBackColor = False
+        '
+        'boto_borrar
+        '
+        Me.boto_borrar.BackColor = System.Drawing.Color.Black
+        Me.boto_borrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.boto_borrar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.boto_borrar.ForeColor = System.Drawing.SystemColors.Control
+        Me.boto_borrar.Location = New System.Drawing.Point(426, 404)
+        Me.boto_borrar.Name = "boto_borrar"
+        Me.boto_borrar.Size = New System.Drawing.Size(132, 86)
+        Me.boto_borrar.TabIndex = 91
+        Me.boto_borrar.Text = "Esborrar"
+        Me.boto_borrar.UseVisualStyleBackColor = False
+        '
+        'boto_afegir
+        '
+        Me.boto_afegir.BackColor = System.Drawing.Color.Black
+        Me.boto_afegir.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.boto_afegir.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.boto_afegir.ForeColor = System.Drawing.SystemColors.Control
+        Me.boto_afegir.Location = New System.Drawing.Point(120, 404)
+        Me.boto_afegir.Name = "boto_afegir"
+        Me.boto_afegir.Size = New System.Drawing.Size(132, 86)
+        Me.boto_afegir.TabIndex = 90
+        Me.boto_afegir.Text = "Afegir"
+        Me.boto_afegir.UseVisualStyleBackColor = False
+        '
         'Gremis
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1113, 621)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.label_seccio)
-        Me.Controls.Add(Me.boto_cancelar)
         Me.Controls.Add(Me.boto_actualitzar)
+        Me.Controls.Add(Me.boto_seguent)
+        Me.Controls.Add(Me.boto_anterior)
         Me.Controls.Add(Me.boto_borrar)
         Me.Controls.Add(Me.boto_afegir)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.label_seccio)
         Me.Controls.Add(Me.text_territori)
         Me.Controls.Add(Me.tag_territori)
         Me.Controls.Add(Me.logo_onu)
@@ -265,10 +280,11 @@ Partial Class Gremis
     Friend WithEvents taula_dades As DataGridView
     Friend WithEvents text_territori As TextBox
     Friend WithEvents tag_territori As Label
-    Friend WithEvents boto_cancelar As Button
-    Friend WithEvents boto_actualitzar As Button
-    Friend WithEvents boto_borrar As Button
-    Friend WithEvents boto_afegir As Button
     Friend WithEvents label_seccio As Label
     Friend WithEvents Label1 As Label
+    Friend WithEvents boto_actualitzar As Button
+    Friend WithEvents boto_seguent As Button
+    Friend WithEvents boto_anterior As Button
+    Friend WithEvents boto_borrar As Button
+    Friend WithEvents boto_afegir As Button
 End Class

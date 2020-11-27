@@ -4,6 +4,8 @@ Public Class Gremis
     Dim connexio As MySqlConnection
     Dim query As String
 
+    Dim persona As Persona
+
     Dim ex, ey As Integer
     Dim arrossega As Boolean
     Private Sub Form1_MouseDown(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles MyBase.MouseDown
@@ -47,7 +49,7 @@ Public Class Gremis
         End If
     End Sub
 
-    Private Sub Button1_MouseEnter(sender As System.Object, e As System.EventArgs) Handles boto_afegir.MouseEnter, boto_actualitzar.MouseEnter, boto_borrar.MouseEnter, boto_cancelar.MouseEnter
+    Private Sub Button1_MouseEnter(sender As System.Object, e As System.EventArgs)
         If sender Is boto_afegir Then
             Me.boto_afegir.BackColor = Color.DimGray
         ElseIf sender Is boto_actualitzar Then
@@ -58,7 +60,7 @@ Public Class Gremis
             Me.boto_cancelar.BackColor = Color.DimGray
         End If
     End Sub
-    Private Sub Button1_MouseLeave(sender As System.Object, e As System.EventArgs) Handles boto_afegir.MouseLeave, boto_actualitzar.MouseLeave, boto_borrar.MouseLeave, boto_cancelar.MouseLeave
+    Private Sub Button1_MouseLeave(sender As System.Object, e As System.EventArgs)
         Me.boto_afegir.BackColor = Color.Black
         Me.boto_actualitzar.BackColor = Color.Black
         Me.boto_borrar.BackColor = Color.Black
