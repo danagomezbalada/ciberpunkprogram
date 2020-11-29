@@ -4,7 +4,7 @@ Public Class Gremis
     Dim connexio As MySqlConnection
     Dim query As String
 
-    Dim persona As Persona
+    Dim gremi As Gremi
 
     Dim ex, ey As Integer
     Dim arrossega As Boolean
@@ -88,14 +88,14 @@ Public Class Gremis
     End Sub
 
     Private Sub mostrarGremi(index As Integer)
-        persona = New Persona("", "", 0, "", "", "", "", "")
-        persona.setTerritori(taula_dades.Rows(index).Cells("Territori").Value.ToString)
-        persona.setCapacitat(taula_dades.Rows(index).Cells("Capacitat").Value.ToString)
-        persona.setGremi(taula_dades.Rows(index).Cells("Gremi").Value.ToString)
+        gremi = New Gremi("", "", "")
+        gremi.setTerritori(taula_dades.Rows(index).Cells("Territori").Value.ToString)
+        gremi.setCapacitat(taula_dades.Rows(index).Cells("Capacitat").Value.ToString)
+        gremi.setGremi(taula_dades.Rows(index).Cells("Gremi").Value.ToString)
 
-        text_territori.Text = persona.getTerritori()
-        text_capacitat.Text = persona.getCapacitat()
-        text_gremi.Text = persona.getGremi()
+        text_territori.Text = gremi.getTerritori()
+        text_capacitat.Text = gremi.getCapacitat()
+        text_gremi.Text = gremi.getGremi()
     End Sub
     Private Sub afegirGremi()
         query = "INSERT INTO `gremis` (`Territori`, `Capacitat`, `Gremi`) VALUES ( '', '', '')"
