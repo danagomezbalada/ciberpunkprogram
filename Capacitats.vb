@@ -4,7 +4,7 @@ Public Class Capacitats
     Dim connexio As MySqlConnection
     Dim query As String
 
-    Dim persona As Persona
+    Dim capacitat As Capacitat
 
     Dim ex, ey As Integer
     Dim arrossega As Boolean
@@ -90,12 +90,12 @@ Public Class Capacitats
     End Sub
 
     Private Sub mostrarCapacitat(index As Integer)
-        persona = New Persona("", "", 0, "", "", "", "", "")
-        persona.setCapacitat(taula_dades.Rows(index).Cells("Capacitat").Value.ToString)
-        persona.setGremi(taula_dades.Rows(index).Cells("Gremi").Value.ToString)
+        capacitat = New Capacitat("", "")
+        capacitat.setCapacitat(taula_dades.Rows(index).Cells("Capacitat").Value.ToString)
+        capacitat.setGremi(taula_dades.Rows(index).Cells("Gremi").Value.ToString)
 
-        text_capacitat.Text = persona.getCapacitat()
-        text_gremi.Text = persona.getGremi()
+        text_capacitat.Text = capacitat.getCapacitat()
+        text_gremi.Text = capacitat.getGremi()
     End Sub
     Private Sub afegirCapacitat()
         query = "INSERT INTO `capacitats` (`Capacitat`, `Gremi`) VALUES ('', '')"

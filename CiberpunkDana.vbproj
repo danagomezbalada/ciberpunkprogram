@@ -94,6 +94,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Capacitat.vb" />
     <Compile Include="Persona.vb" />
     <Compile Include="Persones.Designer.vb">
       <DependentUpon>Persones.vb</DependentUpon>
