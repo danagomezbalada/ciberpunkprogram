@@ -4,6 +4,7 @@ Public Class Gremis
     Dim connexio As MySqlConnection
     Dim query As String
 
+    Dim correcte As Boolean
     Dim gremi As Gremi
 
     Dim ex, ey As Integer
@@ -31,7 +32,6 @@ Public Class Gremis
     End Sub
 
     Private Sub Gremis_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim correcte As Boolean
         Try
             connexio = New MySqlConnection()
             connexio.ConnectionString = "server=localhost;user id=root;password=;database=persones"
@@ -49,34 +49,40 @@ Public Class Gremis
             taula_dades.BackgroundColor = Color.Black
         End If
     End Sub
-    Private Sub botons_MouseEnter(sender As System.Object, e As System.EventArgs) Handles boto_afegir.MouseEnter, boto_anterior.MouseEnter, boto_borrar.MouseEnter, boto_seguent.MouseEnter
+    Private Sub botons_MouseEnter(sender As System.Object, e As System.EventArgs) Handles boto_afegir.MouseEnter, boto_anterior.MouseEnter, boto_borrar.MouseEnter, boto_seguent.MouseEnter, boto_actualitzar.MouseEnter
         sender.BackColor = Color.DimGray
     End Sub
-    Private Sub botons_MouseLeave(sender As System.Object, e As System.EventArgs) Handles boto_afegir.MouseLeave, boto_anterior.MouseLeave, boto_borrar.MouseLeave, boto_seguent.MouseLeave
+    Private Sub botons_MouseLeave(sender As System.Object, e As System.EventArgs) Handles boto_afegir.MouseLeave, boto_anterior.MouseLeave, boto_borrar.MouseLeave, boto_seguent.MouseLeave, boto_actualitzar.MouseLeave
         sender.BackColor = Color.Black
     End Sub
     Private Sub boto_afegir_Click(sender As Object, e As EventArgs) Handles boto_afegir.Click
-        afegirGremi()
-        carregarTaula()
-        Dim i As Int32 = taula_dades.RowCount - 2
-        mostrarGremi(i)
-        taula_dades.ClearSelection()
-        taula_dades.CurrentCell = taula_dades.Rows(i).Cells(0)
-        taula_dades.Rows(i).Selected = True
+        If correcte Then
+            afegirGremi()
+            carregarTaula()
+            Dim i As Int32 = taula_dades.RowCount - 2
+            mostrarGremi(i)
+            taula_dades.ClearSelection()
+            taula_dades.CurrentCell = taula_dades.Rows(i).Cells(0)
+            taula_dades.Rows(i).Selected = True
+        End If
     End Sub
     Private Sub boto_borrar_Click(sender As Object, e As EventArgs) Handles boto_borrar.Click
-        borrarGremi()
-        carregarTaula()
-        mostrarGremi(0)
+        If correcte Then
+            borrarGremi()
+            carregarTaula()
+            mostrarGremi(0)
+        End If
     End Sub
     Private Sub boto_actualitzar_Click(sender As Object, e As EventArgs) Handles boto_actualitzar.Click
-        Dim i As Integer = taula_dades.CurrentRow.Index
-        actualitzarGremi()
-        carregarTaula()
-        mostrarGremi(i)
-        taula_dades.ClearSelection()
-        taula_dades.CurrentCell = taula_dades.Rows(i).Cells(0)
-        taula_dades.Rows(i).Selected = True
+        If correcte Then
+            Dim i As Integer = taula_dades.CurrentRow.Index
+            actualitzarGremi()
+            carregarTaula()
+            mostrarGremi(i)
+            taula_dades.ClearSelection()
+            taula_dades.CurrentCell = taula_dades.Rows(i).Cells(0)
+            taula_dades.Rows(i).Selected = True
+        End If
     End Sub
     Private Sub carregarTaula()
         query = "SELECT * FROM gremis"
