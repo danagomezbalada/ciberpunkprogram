@@ -96,6 +96,7 @@
     </Compile>
     <Compile Include="Capacitat.vb" />
     <Compile Include="Gremi.vb" />
+    <Compile Include="Territori.vb" />
     <Compile Include="Persona.vb" />
     <Compile Include="Persones.Designer.vb">
       <DependentUpon>Persones.vb</DependentUpon>
