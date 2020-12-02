@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 30, 2020 at 07:53 PM
+-- Generation Time: Dec 02, 2020 at 08:31 PM
 -- Server version: 10.4.8-MariaDB
 -- PHP Version: 7.3.10
 
@@ -48,9 +48,7 @@ INSERT INTO `capacitats` (`ID`, `Capacitat`, `Gremi`) VALUES
 (7, 'Lymphoma', 'Actuary'),
 (8, 'Jive SBS', 'Social Worker'),
 (9, 'Immunology', 'Accountant III'),
-(10, 'Risk Management', 'Database Administrator IV'),
-(12, '', ''),
-(14, '223efsd', 'werdsds');
+(10, 'Risk Management', 'Database Administrator IV');
 
 -- --------------------------------------------------------
 
@@ -84,9 +82,7 @@ INSERT INTO `gremis` (`ID`, `Gremi`, `Capacitat`, `Territori`) VALUES
 (12, 'Desktop Support Technician', 'Numerical Simulation', 'Francisco Villa'),
 (13, 'Accountant IV', 'UK GAAP', 'Donostia-San Sebastian'),
 (14, 'Recruiting Manager', 'PPAP', 'Tabalong'),
-(15, 'Computer Systems Analyst I', 'DFSS Green Belt', 'Huaihe'),
-(17, '', '', ''),
-(18, 'we5r', 'sfdf', 'wfer');
+(15, 'Computer Systems Analyst I', 'DFSS Green Belt', 'Huaihe');
 
 -- --------------------------------------------------------
 
@@ -130,9 +126,7 @@ INSERT INTO `persones` (`ID`, `Nom`, `Cognom`, `Edat`, `Territori`, `Capacitat`,
 (17, 'Inessa', 'Parsand', 71, 'Rîbniţa', 'MCMS', 'Mallory', 'National Chung Hsing University, Taipei', 'Associate Professor'),
 (18, 'Kinna', 'Guitton', 71, 'Xiji', 'dtSearch', 'Clarendon', 'Solusi University', 'Senior Quality Engineer'),
 (19, 'Pammi', 'Gibbin', 58, 'Dorchester', 'NRSWA', 'Novick', 'Kent State University', 'Developer I'),
-(20, 'Ware', 'Mellanby', 53, 'Shuishi', 'DL1', 'Mendota', 'Caldwell College', 'Research Nurse'),
-(49, '', '', 0, '', '', '', '', ''),
-(50, 'Hola', 'Que', 23, 'Tal', 'Esta', 'Usted', 'my', 'friend');
+(20, 'Ware', 'Mellanby', 53, 'Shuishi', 'DL1', 'Mendota', 'Caldwell College', 'Research Nurse');
 
 -- --------------------------------------------------------
 
@@ -163,9 +157,7 @@ INSERT INTO `territoris` (`ID`, `Territori`, `Gremi`) VALUES
 (10, 'Patos Fshat', 'Social Worker'),
 (11, 'Kakamigahara', 'Design Engineer'),
 (12, 'Curitibanos', 'VP Quality Control'),
-(13, 'Ochota', 'Desktop Support Technician'),
-(15, 'werwe', 'erwer'),
-(16, '', '');
+(13, 'Ochota', 'Desktop Support Technician');
 
 --
 -- Indexes for dumped tables
