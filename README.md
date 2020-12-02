@@ -1,7 +1,7 @@
 # Aplicació Ciberpunk
 ---------
 # Instal·lació
-Per instal·lar el programa, tan sols hem de descarregar l'[executable](https://gitlab.com/dam2-dana/aplicaciociberpunkdana/-/blob/master/CiberpunkDana.exe).
+Per instal·lar el programa, tan sols hem de descarregar l'[executable]().
 # Utilització
 ### Connexió amb base de dades
 Aquest programa fa servir una connexió a la base de dades '*persones*'. Per tal de fer aquesta connexió:
