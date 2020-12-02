@@ -1,7 +1,7 @@
 # Aplicació Ciberpunk
 ---------
 # Instal·lació
-Per instal·lar el programa, tan sols hem de descarregar l'[executable]().
+Per instal·lar el programa, tan sols hem de descarregar l'[executable](-/blob/master/CiberpunkDana.exe).
 # Utilització
 ### Connexió amb base de dades
 Aquest programa fa servir una connexió a la base de dades '*persones*'. Per tal de fer aquesta connexió:
