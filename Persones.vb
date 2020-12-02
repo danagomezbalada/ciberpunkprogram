@@ -35,7 +35,7 @@ Public Class Persones
     Private Sub Persones_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Try
             connexio = New MySqlConnection()
-            connexio.ConnectionString = "server=localhost;user id=root;password=;database=persones"
+            connexio.ConnectionString = "server=localhost;user id=root;password=alumne;database=persones"
             connexio.Open()
             label_connexio.Text = "Connectat"
             correcte = True
